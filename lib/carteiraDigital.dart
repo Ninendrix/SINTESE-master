@@ -38,7 +38,7 @@ class _carteiraDigitalState extends State<carteiraDigital> {
               child: Column(
                 children: <Widget> [
                   Container(
-                    child: Image.asset('imagens/CarteiraDigital.jpg') //Image.network("http://177.159.234.147:8090/sintese///tmp/${widget.CpfDigitado}.jpg"),
+                    child: Image.network('url'),
                   ),
                   Container(
                   )
