@@ -35,7 +35,7 @@ class _phomeState extends State<phome> {
 
   _acessandocpfdadospessoais() async {
     String UrlDadospessoais =
-        "https://sgs.sintese.org.br/sintese/WebCarteira.rule?sys=SIF&pCPF=${widget.CpfDigitado}";
+        "https://sgs.sintese.org.br/sintese/WebConsultarCPF.rule?sys=SIF&pCPF=${widget.CpfDigitado}";
     http.Response response;
     response = await http.get(UrlDadospessoais);
     Map<String, dynamic> retorno = json.decode(response.body);

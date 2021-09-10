@@ -22,7 +22,7 @@ class _ploginState extends State<plogin> {
     String CpfDigitado = _ControlerCpf.text;
     String SenhaDigitada = _ControlerSenha.text;
     String UrlLogin =
-        "https://sgs.sintese.org.br/sintese/WebConsultarCPF.rule?sys=SIF&pCPF=${CpfDigitado};${SenhaDigitada}";
+        "https://sgs.sintese.org.br/sintese/WebLoginUser.rule?sys=SIF&pLogin=${CpfDigitado};${SenhaDigitada}";
     http.Response response;
     response = await http.get(UrlLogin);
     Map<String, dynamic> retorno = json.decode(response.body);
